@@ -1,0 +1,108 @@
+body {
+    font-family: "Cambria", sans-serif;
+    background: azure;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 12%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #263846;
+    overflow-x: hidden;
+    padding-top: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.sidenav a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.dropdown-btn {
+    background: #263846;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    border: 0px;
+    position: relative;
+    width: 100%;
+}
+
+
+.sidenav a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.sidenav .dropdown-btn:hover::after,a:hover::after{
+    width: 100%; 
+    left: 0; 
+}
+.dropdown-btn::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.main {
+    margin-left: 12%;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.active {
+    background-color: rgb(96, 144, 163);
+    color: white;
+    transition-duration: .5s;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: rgb(119, 146, 168);
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.limit {
+    position: absolute;
+}
+.toBottom{
+    z-index: 9999;
+    position: fixed;
+    top: 85%;
+    left: 90%;
+    background: none;
+    border: none;
+}

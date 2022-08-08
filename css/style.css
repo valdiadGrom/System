@@ -1,0 +1,152 @@
+.login_page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.login {
+    position: relative;
+    z-index: 1;
+    background: #60707F;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.login input{
+    font-family: "Cambria", sans-serif;
+    outline: 0;
+    background: #e2dfdf;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.login select{
+    font-family: Cambria;
+    line-height: 1.4;
+    display: block;
+    width: 100%; /* от ширины блока div */
+    padding: .75rem 2.5rem .75rem 1rem;/* отступы от текста до рамки */
+    margin-bottom: 15px;
+    background: #e2dfdf; /* убираем фон */
+    /* border: 1px solid #ccc; рамка */
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;/* убираем дефолнтные стрелочки */
+    font-family: inherit;/* наследует от родителя */
+    font-size: 1rem;
+    color: #444;
+}
+
+.login input:hover, select:hover{
+    background: rgb(82, 72, 72);
+    color: #e2dfdf;
+
+}
+
+.tableCost {
+    background-color: rgb(255, 255, 255);
+    border-collapse: collapse;
+    /* table-layout: auto; */
+    font-size: 14px;
+}
+/* #fact{
+    margin-left: 40%;
+} */
+
+
+/* .tableScroll th, tr:nth-of-type(1) td {
+  height: 1em;
+} */
+
+
+.tableCost th {
+    font-size: 14px;
+    /* font-weight: normal; */
+    color: rgb(0, 51, 153);
+    padding: 10px 15px;
+}
+
+.tableCost td {
+    color: rgb(102, 102, 153);
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+    /* word-wrap: break-word; */
+}
+
+.tableCost tr:nth-child(2n) {
+    background: rgb(240, 255, 255);
+}
+
+.tableCost tr:hover td {
+    background: #ccddff;
+}
+
+.tableCost thead th {
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+#filtr input {
+    font-family: "Cambria";
+    color: rgb(102, 102, 153);
+    border: 1px solid #b6b7b9;
+    padding: 10px 15px;
+    outline: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    width: 15%;
+    text-align: center;
+    right: -10px;
+}
+
+#filtr input:hover {
+    background: #60707F;
+    color: white;
+}
+
+#butt {
+    background: #f5f8ff;
+    font-family: "Cambria";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 0px;
+    position: static;
+    text-align: center;
+    width: 100%;
+}
+#butt:hover, #reset:hover{
+    background: #ccddff;
+}
+#reset{
+    font-family: "Cambria";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 0px;
+    text-align: center;
+    width: 15%;
+    margin-left: 85%;
+    border: 0;
+}
+
+.input_cost{
+    width: 100%;
+    padding: 5px 8px;
+    display: inline-block;
+    /* position: relative;
+    /* outline:none; */
+    font-weight: bold;
+    font-family: "Cambria";
+}
